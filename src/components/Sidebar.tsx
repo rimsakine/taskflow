@@ -1,0 +1,33 @@
+import styles from "./Sidebar.module.css";
+
+interface Project {
+  id: string;
+  name: string;
+  color: string;
+}
+
+interface SidebarProps {
+  projects: Project[];
+  isOpen: boolean;
+}
+
+export default function Sidebar({ projects, isOpen }: SidebarProps) {
+  return (
+    <aside
+      className={`${styles.sidebar} ${isOpen ? styles.open : styles.closed}`}
+    >
+      <h2 className={styles.sidebarTitle}>Mes Projets</h2>
+      <ul className={styles.projectList}>
+        {projects.map((p) => (
+          <li key={p.id} className={styles.projectItem}>
+            <span
+              className={styles.dot}
+              style={{ backgroundColor: p.color }}
+            ></span>
+            {p.name}
+          </li>
+        ))}
+      </ul>
+    </aside>
+  );
+}
