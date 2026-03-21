@@ -5,11 +5,14 @@ import {
   type AuthState,
   type AuthAction,
 } from "./authReducer";
+
 interface AuthContextType {
   state: AuthState;
   dispatch: React.Dispatch<AuthAction>;
 }
+
 const AuthContext = createContext<AuthContextType | null>(null);
+
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [state, dispatch] = useReducer(authReducer, initialState);
   return (
@@ -18,7 +21,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     </AuthContext.Provider>
   );
 }
-// Custom hook pour consommer le context
+
 export function useAuth() {
   const context = useContext(AuthContext);
   if (!context) {

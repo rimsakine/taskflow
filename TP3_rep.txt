@@ -1,0 +1,6 @@
+Q1 : Pourquoi <Navigate /> (composant) et pas navigate() (hook) ici ?
+R1: On utilise <Navigate /> parce que la redirection est conditionnelle pendant du composant 
+Q2 : Quelle différence entre navigate(from) et navigate(from, { replace: true }) ?
+R2: navigate(from, {replace:true}) permet de ne pas enregistrer dans l'historique avec navigate(from) on peut revenir en arrière
+Q3 : Après un POST, pourquoi fait-on setProjects(prev => [...prev, data]) plutôt qu’un
+re-fetch GET ?

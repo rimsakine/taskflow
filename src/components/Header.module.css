@@ -6,8 +6,13 @@
   padding: 0 16px;
   background-color: #1b8c3e;
   color: white;
+  flex-shrink: 0;
 }
-
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 .menuBtn {
   background: none;
   border: none;
@@ -15,21 +20,29 @@
   font-size: 20px;
   cursor: pointer;
 }
-
-.title {
+.logo {
   font-size: 18px;
   font-weight: 600;
 }
-
-.avatar {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: white;
-  color: #1b8c3e;
+.right {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 13px;
+  gap: 1rem;
+}
+.userName {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+.logoutBtn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+}
+.logoutBtn:hover {
+  background: rgba(255, 255, 255, 0.25);
 }

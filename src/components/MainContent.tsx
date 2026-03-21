@@ -1,4 +1,5 @@
 import styles from "./MainContent.module.css";
+
 interface Column {
   id: string;
   title: string;
@@ -7,6 +8,7 @@ interface Column {
 interface MainContentProps {
   columns: Column[];
 }
+
 export default function MainContent({ columns }: MainContentProps) {
   return (
     <main className={styles.main}>
