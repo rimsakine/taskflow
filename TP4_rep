@@ -1,0 +1,10 @@
+Q1 : Combien de lignes de CSS avez-vous écrit pour le Header MUI ? Comparez avec
+votre Header.module.css.
+R1: a peut près 6 composant avec personalisation avec SX  dans header MUI par contre le Header.module.css nous avons utiliser
+47 lignes  
+Q2: Comparez le code du Header MUI vs Bootstrap. Lequel est plus lisible ? Plus court ?
+R2: le code Bootstrap est le plus lisible et plus courte que MUI 
+Q3:Le Login MUI utilise sx={{}} pour le style. Le Login Bootstrap utilise des classes CSS
+(className). Quel système préférez-vous ? Pourquoi ?
+R3: Bootstrap car il est plus lisible et avoire des classe pré-utilisable mais le MUI comme utilise notre style personnaliser au sein de SX={{}}
+
