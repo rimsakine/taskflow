@@ -1,0 +1,5 @@
+Q1:Le script s’exécute-t-il ? Pourquoi ? Que fait React avec les strings dans le JSX ?
+R1: React traite les strings dans le JSX de manière sécurisée en les échappant automatiquement pour éviter les attaques XSS
+sera affichée littéralement dans le navigateur sans exécuter le code JavaScript contenu dans l'attribut onerror.
+Q2 : Comparez authSlice.ts avec votre ancien authReducer.ts. Qu’est-ce qui a changé ?
+(indice : switch/case, action types, immutabilité)

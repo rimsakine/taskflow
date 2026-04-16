@@ -27,6 +27,18 @@ export default function Login() {
       }
       const { password: _, ...user } = users[0];
       dispatch({ type: "LOGIN_SUCCESS", payload: user });
+      const fakeToken = btoa(
+        JSON.stringify({
+          userId: user.id,
+          email: user.email,
+          role: "admin",
+          exp: Date.now() + 3600000, // expire dans 1h
+        }),
+      );
+      dispatch({
+        type: "LOGIN_SUCCESS",
+        payload: { ...user, token: fakeToken },
+      });
     } catch {
       dispatch({ type: "LOGIN_FAILURE", payload: "Erreur serveur" });
     }

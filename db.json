@@ -26,11 +26,6 @@
       "color": "#e74c3c"
     },
     {
-      "id": "2",
-      "name": "apppp",
-      "color": "#3498db"
-    },
-    {
       "id": "3",
       "name": "API Backend",
       "color": "#2ecc71"
@@ -39,11 +34,6 @@
       "id": "4",
       "name": "Documentation",
       "color": "#f39c12"
-    },
-    {
-      "id": "1c4a",
-      "name": "Rim",
-      "color": "#8c99a1"
     }
   ],
   "columns": [
